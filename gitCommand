@@ -5,3 +5,4 @@ git commit -m "comment"
 git diff HEAD~1..HEAD
 git checkout file.txt
 git reset --hard
+git reset --soft HEAD~1
