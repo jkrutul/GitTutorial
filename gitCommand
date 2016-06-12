@@ -3,6 +3,7 @@ git log
 git log --oneline
 git log --oneline | wc -git
 git log --oneline --graph
+git log --graph --oneline --all --decorate
 git shortlog -sne
 git add -A/-u
 git add -am "Sharing is fun"
@@ -19,11 +20,16 @@ git clone
 git show HEAD
 
 git remote
-git branch
+git branch feature1 // creates feature1 branch
 git branch -r // will display remote branches
+git checkout feature1 // switches to branch feature1
 
 git tag
+git push --tags
+
 git fetch // fetch changes from repo
 
 git push
 git pull
+
+git config --global alias.lga "log --graph --oneline --all --decorate" //creates alias
